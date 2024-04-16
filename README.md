@@ -37,7 +37,8 @@ OUTPUT (84+1)*10 = 850
 
 LeNet5: loss and accurity 
 
-![image](https://github.com/undraa0309/DL/assets/133347765/a701c860-c490-473a-a3e3-589d89cbe409)
+![image](https://github.com/undraa0309/DL/assets/133347765/f2bf8d5c-74c8-4132-a6e1-bf942eb53c17)
+
 
 CustomMLP: loss and accurity 
 ![image](https://github.com/undraa0309/DL/assets/133347765/c10e6df4-9343-4e2a-9278-5b38eb332f2e)
