@@ -8,16 +8,15 @@
 LeNet- 5 
 
 Input 입력 이미지는 28X28
- # C1 (5*5*1+1)*6 = 156
- # C1 (5*5*1+1)*6 = 156
- # S2 AvgPool
- # C3 (5*5*6+1)*16 = 2416
- # S4
- # C5 (16*5*5+1)*120 = 48120
- # OUTPUT (84+1)*10 = 850
-        # Total number of parameters = 123,412
-        # 156+2,416+48,120+10,164+850 = 61,706
-        # backpropagation 61,706
+ C1 (5*5*1+1)*6 = 156
+ S2 AvgPool
+ C3 (5*5*6+1)*16 = 2416
+ S4
+ C5 (16*5*5+1)*120 = 48120
+OUTPUT (84+1)*10 = 850
+        Total number of parameters = 123,412
+        156+2,416+48,120+10,164+850 = 61,706
+        backpropagation 61,706
 
 
 #LeNet-5 parameters:
