@@ -5,30 +5,19 @@
 
 1. model.py
 
+LeNet- 5 
 
-#Input 입력 이미지는 28X28
-#Conv(C1)
-#5x5 크기의 kernel 6개와 stride=1, convolutional layer
-#입력 크기는 32x32x1 이고, 출력 크기는 28x28x6
-#Subsampling(S2)
-#2x2 크기의 kernel 6개와 stride=2, subsampling layer
-#입력 크기는 28x28x6 이고, 출력 크기는 14x14x6
-#Conv(C3)
-#5x5 크기의 kernel 16개와 stride=1, convolution layer
-#입력 크기는 14x14x6 이고, 출력 크기는 10x10x16
-#Subsampling(S4)
-#2x2 크기의 kernel 16개와 stride=2, subsampling layer
-#입력 크기는 10x10x16 이고, 출력 크기는 5x5x16
-#Conv(C5)
-#5x5 크기의 kernel 120개와 stride=1, convolutional layer
-#입력 크기는 5x5x16 이고, 출력 크기는 1x1x120
-
-Layer (F6)
-tanh 함수를 활성화 함수로 이용하는 fully-connected layer
-입력 유닛은 120개 이고, 출력 유닛은 84개
-Layer (F7)
-RBF(Euclidean Radia Basis Function unit)를 활성화 함수로 이용하는 output layer
-입력 크기는 84 이고, 출력 크기는 10
+Input 입력 이미지는 28X28
+ # C1 (5*5*1+1)*6 = 156
+ # C1 (5*5*1+1)*6 = 156
+ # S2 AvgPool
+ # C3 (5*5*6+1)*16 = 2416
+ # S4
+ # C5 (16*5*5+1)*120 = 48120
+ # OUTPUT (84+1)*10 = 850
+        # Total number of parameters = 123,412
+        # 156+2,416+48,120+10,164+850 = 61,706
+        # backpropagation 61,706
 
 
 #LeNet-5 parameters:
