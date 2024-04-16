@@ -1,4 +1,4 @@
-#MNIST Classification - Deep learning assigment 
+###MNIST Classification - Deep learning assigment 
 
 ![image](https://github.com/undraa0309/DL/assets/133347765/19b4f748-91be-431f-95cd-aa59c691ebd7)
 출처: https://blog.naver.com/laonple/220648539191
